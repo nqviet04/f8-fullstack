@@ -22,6 +22,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--dark-color);
   background: var(--light-color);
+
+  counter-reset: total-homework;
 }
 
 a {
@@ -197,13 +199,24 @@ ul {
   font-size: 30px;
 }
 
+.homework-container {
+  position: relative;
+}
+
 .total-homework {
+  position: absolute;
+  top: 0;
+  right: 0;
   padding: 8px 16px;
   border-radius: 999px;
   background: var(--white-color);
   border: 1px solid var(--border-color);
   color: var(--text-color);
   font-weight: 700;
+}
+
+.total-homework::before {
+  content: counter(total-homework) " bài";
 }
 
 .homework-grid {
@@ -225,6 +238,8 @@ ul {
   display: flex;
   flex-direction: column;
   height: 100%;
+
+  counter-increment: total-homework;
 }
 
 .homework-card:hover {
@@ -322,6 +337,35 @@ ul {
   gap: 20px;
   color: var(--text-color);
   font-size: 14px;
+}
+
+/* Sub page */
+.sub-page .homework-section {
+  min-height: calc(100vh - 128px);
+  padding: 56px 0 90px;
+}
+
+.sub-homework-list {
+  padding: 0;
+  margin: 0;
+}
+
+.sub-homework-list .homework-card {
+  list-style: none;
+}
+
+.sub-page .homework-section {
+  min-height: calc(100vh - 128px);
+  padding: 56px 0 90px;
+}
+
+.sub-page .homework-grid {
+  padding: 0;
+  margin: 0;
+}
+
+.sub-page .homework-card {
+  list-style: none;
 }
 
 /* Responsive */

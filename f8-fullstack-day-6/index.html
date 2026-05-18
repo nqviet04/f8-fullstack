@@ -1,25 +1,147 @@
 <!doctype html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>f8-zoom-day-6</title>
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <title>Bài tập Day 6</title>
+    <link rel="stylesheet" href="../asset/css/style.css" />
   </head>
-  <body>
-    <ul class="home">
-      <li><a href="./cv-flex.html" target="_blank">CV</a></li>
-      <li><a href="./pricing-flex.html" target="_blank">Pricing</a></li>
-      <li><a href="./product-list.html" target="_blank">Product List</a></li>
-      <li>
-        <a href="./register-layout.html" target="_blank"
-          >Layout Login – Register</a
-        >
-      </li>
-      <li>
-        <a href="./froggy.html" target="_blank">Froggy Pro</a>
-      </li>
-    </ul>
+
+  <body class="sub-page">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="../index.html" class="logo">
+          <span class="logo-icon">F8</span>
+          <span class="logo-text">My Homework</span>
+        </a>
+
+        <nav class="nav">
+          <ul>
+            <li><a href="../index.html">Trang chủ</a></li>
+            <li><a href="../index.html#homework">Bài tập</a></li>
+            <li><a href="#contact">Liên hệ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="homework-section">
+        <div class="container homework-container">
+          <div class="section-heading">
+            <div>
+              <p class="section-label">Day 6</p>
+              <h2>Danh sách bài tập</h2>
+            </div>
+          </div>
+
+          <ul class="homework-grid">
+            <li class="homework-card">
+              <div class="card-top">
+                <span class="day-label">Bài 1</span>
+                <span class="status">HTML CSS</span>
+              </div>
+
+              <div class="card-body">
+                <h3>CV Flex</h3>
+                <p>Bài tập thiết kế giao diện CV cá nhân bằng Flexbox.</p>
+              </div>
+
+              <div class="card-footer">
+                <a href="./cv-flex.html" class="view-link" target="_blank">
+                  Xem bài
+                </a>
+              </div>
+            </li>
+
+            <li class="homework-card">
+              <div class="card-top">
+                <span class="day-label">Bài 2</span>
+                <span class="status">HTML CSS</span>
+              </div>
+
+              <div class="card-body">
+                <h3>Pricing</h3>
+                <p>Bài tập thiết kế bảng giá dịch vụ với bố cục linh hoạt.</p>
+              </div>
+
+              <div class="card-footer">
+                <a href="./pricing-flex.html" class="view-link" target="_blank">
+                  Xem bài
+                </a>
+              </div>
+            </li>
+
+            <li class="homework-card">
+              <div class="card-top">
+                <span class="day-label">Bài 3</span>
+                <span class="status">HTML CSS</span>
+              </div>
+
+              <div class="card-body">
+                <h3>Product List</h3>
+                <p>
+                  Bài tập xây dựng danh sách sản phẩm nổi bật theo dạng card.
+                </p>
+              </div>
+
+              <div class="card-footer">
+                <a href="./product-list.html" class="view-link" target="_blank">
+                  Xem bài
+                </a>
+              </div>
+            </li>
+
+            <li class="homework-card">
+              <div class="card-top">
+                <span class="day-label">Bài 4</span>
+                <span class="status">HTML CSS</span>
+              </div>
+
+              <div class="card-body">
+                <h3>Login - Register</h3>
+                <p>Bài tập thiết kế bố cục form đăng ký sinh viên.</p>
+              </div>
+
+              <div class="card-footer">
+                <a
+                  href="./register-layout.html"
+                  class="view-link"
+                  target="_blank"
+                >
+                  Xem bài
+                </a>
+              </div>
+            </li>
+
+            <li class="homework-card">
+              <div class="card-top">
+                <span class="day-label">Bài 5</span>
+                <span class="status">HTML CSS</span>
+              </div>
+
+              <div class="card-body">
+                <h3>Froggy Pro</h3>
+                <p>Bài tập luyện tập Flexbox thông qua giao diện Froggy.</p>
+              </div>
+
+              <div class="card-footer">
+                <a href="./froggy.html" class="view-link" target="_blank">
+                  Xem bài
+                </a>
+              </div>
+            </li>
+          </ul>
+          <span class="total-homework"></span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="container footer-inner">
+        <p>© 2026 My Fullstack Homework</p>
+        <p>Designed with HTML & CSS</p>
+      </div>
+    </footer>
   </body>
 </html>

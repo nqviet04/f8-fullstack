@@ -1,23 +1,97 @@
 <!doctype html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>f8-zoom-day-7</title>
-
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <title>Bài tập Day 8</title>
+    <link rel="stylesheet" href="../asset/css/style.css" />
   </head>
-  <body style="background: #ccc">
-    <ul class="home">
-      <li>
-        <a href="./courses.html" target="_blank">Bài 1: Trang Scholars</a>
-      </li>
-      <li>
-        <a href="./outline-course.html" target="_blank"
-          >Bài 2: Xây dựng danh sách chương và bài học</a
-        >
-      </li>
-    </ul>
+
+  <body class="sub-page">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="../index.html" class="logo">
+          <span class="logo-icon">F8</span>
+          <span class="logo-text">My Homework</span>
+        </a>
+
+        <nav class="nav">
+          <ul>
+            <li><a href="../index.html">Trang chủ</a></li>
+            <li><a href="../index.html#homework">Bài tập</a></li>
+            <li><a href="#contact">Liên hệ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="homework-section">
+        <div class="container homework-container">
+          <div class="section-heading">
+            <div>
+              <p class="section-label">Day 8</p>
+              <h2>Danh sách bài tập</h2>
+            </div>
+          </div>
+
+          <ul class="homework-grid">
+            <li class="homework-card">
+              <div class="card-top">
+                <span class="day-label">Bài 1</span>
+                <span class="status">HTML CSS</span>
+              </div>
+
+              <div class="card-body">
+                <h3>Trang Scholars</h3>
+                <p>
+                  Áp dụng kiến thức mới hoàn thiện các pages trong bài tập buổi
+                  7.
+                </p>
+              </div>
+
+              <div class="card-footer">
+                <a href="./courses.html" class="view-link" target="_blank">
+                  Xem bài
+                </a>
+              </div>
+            </li>
+
+            <li class="homework-card">
+              <div class="card-top">
+                <span class="day-label">Bài 2</span>
+                <span class="status">HTML CSS</span>
+              </div>
+
+              <div class="card-body">
+                <h3>Xây dựng danh sách chương và bài học</h3>
+                <p>
+                  Tham khảo bất cứ danh sách chương và bài học của khóa học bất
+                  kỳ trên internet (hoặc tự xây dựng, nhờ AI lên danh sách, …).
+                </p>
+              </div>
+
+              <div class="card-footer">
+                <a
+                  href="./outline-course.html"
+                  class="view-link"
+                  target="_blank"
+                >
+                  Xem bài
+                </a>
+              </div>
+            </li>
+          </ul>
+          <span class="total-homework"></span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="container footer-inner">
+        <p>© 2026 My Fullstack Homework</p>
+        <p>Designed with HTML & CSS</p>
+      </div>
+    </footer>
   </body>
 </html>
