@@ -22,8 +22,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--dark-color);
   background: var(--light-color);
-
-  counter-reset: total-homework;
 }
 
 a {
@@ -178,6 +176,8 @@ ul {
 /* Homework */
 .homework-section {
   padding: 70px 0 90px;
+
+  counter-reset: total-homework;
 }
 
 .section-heading {
